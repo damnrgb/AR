@@ -21,6 +21,18 @@
         flex-shrink: 0; /* Prevents shrinking of the model-viewer */
       }
 
+      button{
+        display: none;
+      }
+@media only screen and (max-width: 600px) {
+  button{
+    display: block;
+    position: fixed;
+    left:0;
+    top: 0;
+    z-index: 999
+  }
+}
     </style>
   </head>
   <body>
@@ -38,9 +50,9 @@
       environment-image="neutral"
     >      <button
         slot="ar-button"
-        style="width: 100px; height: 100px; top: 0; left: 0"
-      >
-        AR Button
+      
+      >AR
+    
       </button>
     </model-viewer>
   </body>
