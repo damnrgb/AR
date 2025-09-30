@@ -18,6 +18,9 @@
         height: 100dvh; /* Ensures it takes 50% of the screen height */
         min-height: 300px;
         max-width:800px;
+        display: flex;
+   justify-content: center; /* horizontal */
+  align-items: center;  
         flex-shrink: 0; /* Prevents shrinking of the model-viewer */
       }
 
@@ -26,10 +29,12 @@
   button{
     display: block;
     position: fixed;
+    width: 200px;
+    height:200px
     left:0;
     top: 0;
     z-index: 999;
-    background-color: transparent;
+    background-color: gray;
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
@@ -60,7 +65,7 @@
       
       <button
         slot="ar-button"
-      >AR
+      >Alle Cookies Akzeptieren
       </button>
     </model-viewer>
   </body>
